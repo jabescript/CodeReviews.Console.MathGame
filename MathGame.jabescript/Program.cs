@@ -12,10 +12,11 @@ public class Program
               + "1 - Start Game\n"
               + "2 - Exit\n");
             System.Console.Write($"{username}: ");
+
             switch (Console.ReadLine())
             {
                 case "1": break;
-                case "2": Console.WriteLine("Goodbye!"); break;
+                case "2": Console.WriteLine("Goodbye!"); Environment.Exit(0); break;
                 default: Console.WriteLine("Please enter a number."); break;
             }
         }
